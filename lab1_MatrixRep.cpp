@@ -9,18 +9,21 @@ int main()
     cin >> ver;
 
     // user input
-    int adj[ver][ver];
-    int a = 1, b = 1;
+    vector<vector<int>> adj(ver, vector<int>(ver, 0));
+    int b = 1;
     for (int i = 0; i < ver; i++)
     {
-        for (int j = 0; j < ver; j++)
+        for (int j = i; j < ver; j++)
         {
-            cout << "Enter 1 if V" << a << " is connected to V" << b << " else enter zero\n";
+            cout << "Enter 1 if V" << i + 1 << " is having an edge to V" << j + 1 << " else enter zero\n";
             cin >> adj[i][j];
-            b++;
+            if (adj[i][j] == 1)
+            {
+                adj[j][i] = 1;
+            }
         }
-        a++;
-        b = 1;
+        // b++;
+        // b = 1;
     }
     // printing the matrix
     for (int i = 0; i < ver; i++)
