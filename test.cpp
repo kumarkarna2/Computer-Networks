@@ -9,20 +9,16 @@ int main()
     cin >> ver;
 
     // user input
-    vector<vector<int>> adj(ver, vector<int>(ver, 0));
-
+    int adj[ver][ver] = {0};
     for (int i = 0; i < ver; i++)
     {
         for (int j = i; j < ver; j++)
         {
             cout << "Enter 1 if V" << i + 1 << " is having an edge to V" << j + 1 << " else enter zero\n";
             cin >> adj[i][j];
-            if (adj[i][j] == 1)
-            {
-                adj[j][i] = 1;
-            }
         }
     }
+
     // printing the matrix
     for (int i = 0; i < ver; i++)
     {
