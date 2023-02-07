@@ -10,13 +10,13 @@ int main()
     for (int i = 0; i < v; i++)
     {
         int a;
-        // cout << "Enter the number of edge outgoing from V" << i + 1 << "\n";
+        cout << "Enter the number of edge outgoing from V" << i + 1 << "\n";
         cin >> a;
         for (int j = 0; j < a; j++)
         {
             int b;
-            // cout << "Enter edge number"
-            //  << "\n";
+            cout << "Enter edge number"
+                 << "\n";
             cin >> b;
             arr[i][b - 1] = 1;
         }
@@ -24,13 +24,13 @@ int main()
     for (int i = 0; i < v; i++)
     {
         int a;
-        // cout << "Enter the number of edge incoming to V" << i + 1 << "\n";
+        cout << "Enter the number of edge incoming to V" << i + 1 << "\n";
         cin >> a;
         for (int j = 0; j < a; j++)
         {
             int b;
-            // cout << "Enter edge number"
-            //  << "\n";
+            cout << "Enter edge number"
+                 << "\n";
             cin >> b;
             arr[i][b] = -1;
         }
