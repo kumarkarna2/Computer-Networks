@@ -14,12 +14,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-string Xor(string geneator, string temp)
+string Xor(string generator, string temp)
 {
     string result = "";
     for (int i = 1; i < temp.length(); i++)
     {
-        if (geneator[i] == temp[i])
+        if (generator[i] == temp[i])
             result += "0";
         else
             result += "1";
