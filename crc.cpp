@@ -60,9 +60,10 @@ string bitDiv(string &codeWord, string generator)
 
 int main()
 {
-    string generator = "1001";
+    string generator = "10111";
     string crc = "";
-    string msg = "10011101";
+    string msg = "1010011110";
+
     string codeWord = msg;
     int genLen = generator.length();
 
