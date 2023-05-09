@@ -136,13 +136,6 @@ int main()
 {
     string data = "1100110010101010";
 
-    // int dataArr[size];
-    // for (int i = 0; i < size; i++)
-    // {
-    //     dataArr[i] = stoi(data.substr(i * 8, 8));
-    // }
-    // divide(data);
-
     string chkSum = sender(data);
 
     receiver(data, chkSum);
